@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ·Final· </title>
+	<style>
+		body{
+		background-image: url(fondo.jfif);
+		background-size: cover;
+	}
+		.fondoletra{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 5%;
+		left: 30%;
+		width: 40%;
+		height: 15%;
+		background:#98FFE4;
+		border: black 5px solid;
+
+	}
+	@font-face{
+	font-family: ma;
+	src: url(bluee.otf);}
+
+	.fondo{
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		width: 90%;
+		height: 70%;
+		background: #98FFE4;
+		border-radius: 10px;
+		border: black 5px solid;
+
+	}
+	.boton1{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 30%;
+		left: 6%;
+		width: 10%;
+		height: 15%;
+		background: #FE67D8;
+		border-radius: 100px;
+		border: black 5px solid;
+	}
+	.boton2{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 48%;
+		left: 6%;
+		width: 10%;
+		height: 15%;
+		background: #FE67D8;
+		border-radius: 100px;
+		border: black 5px solid;
+	}
+	.cuadro{
+		position: absolute;
+		top: 30%;
+		right: 6%;
+		width: 40%;
+		height: 35%;
+		background: #FE67D8;
+		border-radius: 10px;
+		border: black 5px solid;
+
+	}
+	.info{
+		position: absolute;
+		font-family: me;
+		top: 70%;
+		left: 6%;
+		width: 0%;
+		height: 20%;
+		background: #FE67D8;
+		border-radius: 10px;
+		border: black 5px solid;
+		transition: 3s all;
+
+	}
+	@font-face{
+	font-family: me;
+	src: url(jan.ttf);}
+	.sum{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 30%;
+		left: 20%;
+		width: 0%;
+		height: 15%;
+		background: white;
+		transition: 3s all;
+
+	}
+	
+	.res{
+	    position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 30%;
+		left: 35%;
+		width: 0%;
+		height: 15%;
+		background: white;
+	transition: 3s all;
+
+
+	}
+	.di{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 48%;
+		left: 20%;
+		width: 0%;
+		height: 15%;
+		background: white;
+		transition: 3s all;
+
+	}
+	.mul{
+		position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 48%;
+		left: 35%;
+		width: 0%;
+		height: 15%;
+		background: white;
+		transition: 3s all;
+
+	}
+	 .ma1{
+                        position: absolute;
+                        font-family: 'Chewy', cursive;
+                        top: 33%;
+                        right: 37%;
+                        height: 0%;
+                        color:black;
+                }
+                 .ma3{
+                        position: absolute;
+                        font-family: 'Chewy', cursive;
+                        top: 39%;
+                        right: 34%;
+                        width: 11%;
+                        height: 7%;
+                        color:black;
+                }
+                .ma2{
+                        position: absolute;
+                        font-family: 'Chewy', cursive;
+                        top: 48%;
+                        right: 37%;
+                        height: 0%;
+                        color:black;
+                }
+                 .ma4{
+                        position: absolute;
+                        font-family: 'Chewy', cursive;
+                        top: 54%;
+                        right: 34%;
+                        width: 11%;
+                        height: 7%;
+                        color:black;
+                }
+        .sum1{
+        position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 40%;
+		right: 10%;
+		width:0%;
+		height: 15%;
+		background: white;
+		
+        }
+         .res1{
+        position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 40%;
+		right: 10%;
+		width: 0%;
+		height: 15%;
+		background: white;
+		
+        }
+         .di1{
+        position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 40%;
+		right: 10%;
+		width: 0%;
+		height: 15%;
+		background: white;
+		
+        }
+         .mul1{
+        position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 40%;
+		right: 10%;
+		width: 0%;
+		height: 15%;
+		background: white;
+		
+        }
+          .resul{
+        position: absolute;
+		font-family: ma;
+		font-size: 330%;
+		top: 45%;
+		right: 23%;
+		width:10%;
+		height: 10%;
+		background: white;
+		
+        }
+        .cer{
+		position: absolute;
+		font-family: ma;
+		font-size: 130%;
+		top: 85%;
+		left: 84%;
+		width: 5%;
+		height: 0%;
+		background: #67FED6;
+		
+		
+	}
+		
+	</style>
+</head>
+<body>
+	<div class="fondoletra"><center>Operaciones Basicas</center></div>
+	<div class="fondo"></div>
+	<div class="boton1" onclick="boton()"> <center> SR </center></div>
+	<div class="boton2" onclick="botonn()"><center> MD </center></div>
+	<div class="cuadro" id="cua"></div>
+	<div class="info" id="a"></div>
+	<div class="sum" id="s" onclick="summ()"></div>
+	<div class="res" id="r" onclick="ress()"></div>
+	<div class="di" id="d" onclick="divii()"></div>
+    <div class="mul" id="m" onclick="mull()"></div>
+
+	<div class="sum1" id="s1" onclick="summ1()"></div>
+	<div class="res1" id="r1" onclick="ress1()"></div>
+	<div class="di1" id="d1" onclick="divii1()"></div>
+	<div class="mul1" id="m1" onclick="mull1()"></div>
+	<div class="resul" id="resu"></div>
+	<div class="cer" id="aaa" onclick="cerr()"> </div>
+
+	<form>
+       
+        	<label class="ma1">Numero 1:</label><br>
+        	<input class="ma3" type="text" id="cata" placeholder="numero"><br>
+        	<label class="ma2">Numero 2:</label><br>
+        	<input class="ma4" type="text" id="cata2" placeholder="numero"><br>
+        </form>
+
+<script>
+	
+		function boton() {
+
+			a.style.width=88+"%";
+			a.innerHTML="  "
+			s.style.width=10+"%";
+			s.innerHTML=" + ";
+			r.style.width=10+"%";
+			r.innerHTML=" - ";
+				aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+	}
+	function botonn() {
+
+			a.style.width=88+"%";
+			a.innerHTML="  "
+			m.style.width=10+"%";
+			m.innerHTML=" x ";
+			d.style.width=10+"%";
+			d.innerHTML=" ·/· ";
+				aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+	}
+	function summ() {
+
+			a.style.width=88+"%";
+			a.innerHTML=" La suma es una operacion basia que es muy importante para muchas cosas, se hace aunmentado la cantidad que nos indica quiere decir, 5 + 5 = 10, por que si juan tiene 5 pesos y juliana 5 pesos y los juntan entonces tiene 5 pesos";
+			s1.style.width=10+"%";
+			s1.innerHTML=" Sumar ";
+			r1.style.width=0+"%";
+			r1.innerHTML=" ";
+			d1.style.width=0+"%";
+			d1.innerHTML=" ";
+			m1.style.width=0+"%";
+			m1.innerHTML=" ";
+			aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+
+			
+	}
+	function ress() {
+
+			a.style.width=88+"%";
+			a.innerHTML=" La resta es una operacion basica que se utiliza mucho cosas, ejemplo: sara tiene 10 pesos y le debe 5 pesos y ella pago su deuda con sus 10 pesos por lo tanto le debe quedar 5 pesos para ella por que se resto 10-5=5 ";
+			r1.style.width=10+"%";
+			r1.innerHTML=" Resta ";
+			s1.style.width=0+"%";
+			s1.innerHTML=" ";
+			d1.style.width=0+"%";
+			d1.innerHTML=" ";
+			m1.style.width=0+"%";
+			m1.innerHTML=" ";
+			aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+			
+	}
+	function divii() {
+
+			a.style.width=88+"%";
+			a.innerHTML=" La division nos sirve para dividir 2 numero, por ejemplo la mama de carla compro una pizza de 8 porsiones y carla esta con 3 amigas entonces ay que dividir 8 y 4 para saber cuantas porsiones toca por cada persona el total es de 2 porsiones para cada uno.";
+			d1.style.width=10+"%";
+			d1.innerHTML=" Divi ";
+			s1.style.width=0+"%";
+			s1.innerHTML=" ";
+			r1.style.width=0+"%";
+			r1.innerHTML=" ";
+			m1.style.width=0+"%";
+			m1.innerHTML=" ";
+			aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+			
+	}
+	function mull() {
+
+			a.style.width=88+"%";
+			a.innerHTML=" La multiplicacion nor sirve para aumentar ese numero tanta cantidad, por ejemplo ay 6 filas y en cada fila ay 2 persona la formula es asi 6x2 entonces necesitamos saber cuantas personas son eso es igual 12 por que 6 x 2 = 12 ";
+			m1.style.width=10+"%";
+			m1.innerHTML=" Multi ";
+			s1.style.width=0+"%";
+			s1.innerHTML=" ";
+			r1.style.width=0+"%";
+			r1.innerHTML=" ";
+			d1.style.width=0+"%";
+			d1.innerHTML=" ";
+			aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+			
+			
+	}
+	 function summ1(){
+              	s=Number(cata.value);
+              	y=Number(cata2.value);
+              	sum=s+y;
+              	console.log(sum);
+              	resu.innerHTML=sum;
+              	aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+        
+              }
+              function ress1(){
+                s=Number(cata.value);
+                y=Number(cata2.value);
+                res=s-y;
+                console.log(res);
+                resu.innerHTML=res;
+                aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+              
+              }
+              function mull1(){
+                s=Number(cata.value);
+                y=Number(cata2.value);
+                mu=s*y;
+                console.log(mu);
+                resu.innerHTML=mu;
+                aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+             
+              }
+              function divii1(){
+                s=Number(cata.value);
+                y=Number(cata2.value);
+                dive=s/y;
+                console.log(dive);
+                resu.innerHTML=dive;
+                aaa.style.height=6+"%";
+			aaa.innerHTML="cerrar";
+               
+              }
+
+              function cerr(){
+            s.style.width=0+"%";
+			s.innerHTML="  ";
+			r.style.width=0+"%";
+			r.innerHTML="  ";
+			m.style.width=0+"%";
+			m.innerHTML=" ";
+			d.style.width=0+"%";
+			d.innerHTML="  ";
+
+            a.style.width=0+"%";
+			a.innerHTML="  "
+
+            s1.style.width=0+"%";
+			s1.innerHTML=" ";
+			r1.style.width=0+"%";
+			r1.style.width=0+"%";
+			r1.innerHTML=" ";
+			d1.style.width=0+"%";
+			d1.innerHTML=" ";
+			m1.style.width=0+"%";
+			m1.innerHTML=" ";
+
+			aaa.style.height=0+"%";
+			aaa.innerHTML=" ";
+		}
+
+        </script>
+
+
+</script>
+
+</body>
+</html>
